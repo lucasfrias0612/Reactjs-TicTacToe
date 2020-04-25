@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--FontAwesome 5.13.0-->
+    <link href="https://cdn.lucasfrias.com.ar/fontawesome-free-5.13.0-web/css/all.min.css" rel="stylesheet">
+
+    <!--Bootstrap 4.4.1-->
+    <link href="https://cdn.lucasfrias.com.ar/bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="all.css">
+    <title>TaTeTi con React</title>
+</head>
+
+<body class="bg-light">
+    <div style="padding-bottom:5em;">
+        <header class="bg-dark sticky-top">
+            <div class="container">
+                <div class="row">
+                    <div class="logo col-sm-6">
+                        <img src='/img/logo.svg' class="App-logo" alt="logo" />
+                        <img src="/img/logo.webp" width="150" alt="logo" />
+                    </div>
+                    <div class="social-header col-sm-6 text-right mt-1">
+                        <a class="p-1" href="https://www.linkedin.com/in/lucasmatiasfrias" target="_blank"
+                            aria-label="Linkedin">
+                            <i class="h3 fab fa-linkedin"></i>
+                        </a>
+                        <a class="p-1" href="https://github.com/lucasfrias0612" target="_blank" aria-label="GitHub">
+                            <i class="h3 fab fa-github"></i>
+                        </a>
+                        <a class="p-1" href="https://api.whatsapp.com/send?phone=541159142277" target="_blank"
+                            aria-label="Whatsapp">
+                            <i class="h3 fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- We will put our React component inside this div. -->
+        <main id="root" class="mb-5"></main>
+
+        <footer class="bg-dark fixed-bottom">
+            <div class="d-flex justify-content-center">
+                <div class="row mt-2">
+                    <div class="col-sm-6 text-center">
+                        <a class="p-1" href="https://www.linkedin.com/in/lucasmatiasfrias" target="_blank"
+                            aria-label="Linkedin">
+                            <i class="h4 fab fa-linkedin"></i>
+                        </a>
+                        <a class="p-1" href="https://github.com/lucasfrias0612" target="_blank" aria-label="GitHub">
+                            <i class="h4 fab fa-github"></i>
+                        </a>
+                        <a class="p-1" href="https://api.whatsapp.com/send?phone=541159142277" target="_blank"
+                            aria-label="Whatsapp">
+                            <i class="h4 fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 text-center">
+                        <p class="text-muted">2020 © Design by Lucas Frías</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Load Babel JSX. -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Load our React component. Is necesary to add type="text/babel" for Babel conversion-->
+    <script src="components/Square.jsx" type="text/babel"></script>
+    <script src="components/Board.jsx" type="text/babel"></script>
+    <script src="components/Game.jsx" type="text/babel"></script>
+
+    <script src="app.js" type="text/babel"></script>
+</body>
+
+</html>
