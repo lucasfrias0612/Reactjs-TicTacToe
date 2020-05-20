@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--FontAwesome 5.13.0-->
-    <link href="https://cdn.lucasfrias.com.ar/fontawesome-free-5.13.0-web/css/all.min.css" rel="stylesheet">
+    <link href="fontawesome-free-5.13.0-web/css/all.min.css" rel="stylesheet">
 
     <!--Bootstrap 4.4.1-->
-    <link href="https://cdn.lucasfrias.com.ar/bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="all.css">
@@ -70,12 +70,11 @@
         </footer>
     </div>
     <!-- Load Babel JSX. -->
-    <script src="https://cdn.lucasfrias.com.ar/babeljs/babel-7.9.0-stable.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
 
     <!-- Load React. -->
-    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-    <script src="https://cdn.lucasfrias.com.ar/reactjs/react-16.13.1.production.min.js" crossorigin></script>
-    <script src="https://cdn.lucasfrias.com.ar/reactjs/react-dom-16.13.1.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
 
     <!-- Load our React component. Is necesary to add type="text/babel" for Babel conversion-->
     <script src="components/Square.jsx" type="text/babel"></script>
